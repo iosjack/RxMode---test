@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func toggleReadingMode(_ sender: UISwitch) {
-        // 当开关打开的时候 开启夜间模式 否则开启日间模式
+        // 当开关打开的时候 开启夜间模式 否则开启日间模式   123
         ReadingModeAdjuster.updateStatus(readingMode: sender.isOn ? .nightTime : .dayTime)
         modeDetailLabel.text = (sender.isOn ? "当前为夜间模式" : "当前为日间模式")
         
